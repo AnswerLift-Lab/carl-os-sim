@@ -1,0 +1,308 @@
+{
+  "experiment": "exp2_swarm_tolerance",
+  "n_drones": 12,
+  "ticks": 400,
+  "seeds": [
+    7,
+    21,
+    42
+  ],
+  "dropouts": [
+    0.0,
+    0.1,
+    0.3,
+    0.5,
+    0.7
+  ],
+  "reference_claim": "decentralized duality sensing formation error <= centralized at dropout >= 0.3",
+  "claim_met": true,
+  "summary_by_dropout": {
+    "0.0": {
+      "mean_dec_error": 0.7649984057475826,
+      "mean_cen_error": 0.7859365223205007,
+      "dec_wins": 2,
+      "n": 3
+    },
+    "0.1": {
+      "mean_dec_error": 0.8217118797849289,
+      "mean_cen_error": 0.8824964092270619,
+      "dec_wins": 3,
+      "n": 3
+    },
+    "0.3": {
+      "mean_dec_error": 0.804063936052307,
+      "mean_cen_error": 1.0629534502238633,
+      "dec_wins": 3,
+      "n": 3
+    },
+    "0.5": {
+      "mean_dec_error": 0.9024769560095893,
+      "mean_cen_error": 1.9198093058200405,
+      "dec_wins": 3,
+      "n": 3
+    },
+    "0.7": {
+      "mean_dec_error": 1.0725987086998274,
+      "mean_cen_error": 7.146956394396369,
+      "dec_wins": 3,
+      "n": 3
+    }
+  },
+  "trials": [
+    {
+      "seed": 7,
+      "dropout": 0.0,
+      "decentralized": {
+        "mean_error": 0.8008538918253255,
+        "mean_error_honest": 0.8008538918253255,
+        "final_error": 0.2607326696351446,
+        "coherence_fraction": 0.9775
+      },
+      "centralized": {
+        "mean_error": 0.855286126036749,
+        "mean_error_honest": 0.855286126036749,
+        "final_error": 0.4042981290784157,
+        "coherence_fraction": 0.9775
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 7,
+      "dropout": 0.1,
+      "decentralized": {
+        "mean_error": 0.9202342899448643,
+        "mean_error_honest": 0.9202342899448643,
+        "final_error": 0.1862079838438898,
+        "coherence_fraction": 0.975
+      },
+      "centralized": {
+        "mean_error": 0.9572001431341556,
+        "mean_error_honest": 0.9572001431341556,
+        "final_error": 0.47481316664132106,
+        "coherence_fraction": 0.975
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 7,
+      "dropout": 0.3,
+      "decentralized": {
+        "mean_error": 0.9750757160838119,
+        "mean_error_honest": 0.9750757160838119,
+        "final_error": 0.781054549676572,
+        "coherence_fraction": 0.975
+      },
+      "centralized": {
+        "mean_error": 1.2295522398854448,
+        "mean_error_honest": 1.2295522398854448,
+        "final_error": 0.6791504419613066,
+        "coherence_fraction": 0.9725
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 7,
+      "dropout": 0.5,
+      "decentralized": {
+        "mean_error": 0.8573100259133548,
+        "mean_error_honest": 0.8573100259133548,
+        "final_error": 0.440743721573702,
+        "coherence_fraction": 0.9825
+      },
+      "centralized": {
+        "mean_error": 1.9137525933421335,
+        "mean_error_honest": 1.9137525933421335,
+        "final_error": 1.1485976570436265,
+        "coherence_fraction": 0.9775
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 7,
+      "dropout": 0.7,
+      "decentralized": {
+        "mean_error": 1.022369169165114,
+        "mean_error_honest": 1.022369169165114,
+        "final_error": 0.4797126667285678,
+        "coherence_fraction": 0.98
+      },
+      "centralized": {
+        "mean_error": 7.357319827958243,
+        "mean_error_honest": 7.357319827958243,
+        "final_error": 5.588504314586969,
+        "coherence_fraction": 0.34
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 21,
+      "dropout": 0.0,
+      "decentralized": {
+        "mean_error": 0.6813847627470646,
+        "mean_error_honest": 0.6813847627470646,
+        "final_error": 0.4414701761661426,
+        "coherence_fraction": 0.985
+      },
+      "centralized": {
+        "mean_error": 0.7064785749398936,
+        "mean_error_honest": 0.7064785749398936,
+        "final_error": 0.056102625109922775,
+        "coherence_fraction": 0.985
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 21,
+      "dropout": 0.1,
+      "decentralized": {
+        "mean_error": 0.7379285547808975,
+        "mean_error_honest": 0.7379285547808975,
+        "final_error": 0.3221991715621981,
+        "coherence_fraction": 0.9825
+      },
+      "centralized": {
+        "mean_error": 0.8111396170908393,
+        "mean_error_honest": 0.8111396170908393,
+        "final_error": 0.4428466508225173,
+        "coherence_fraction": 0.9825
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 21,
+      "dropout": 0.3,
+      "decentralized": {
+        "mean_error": 0.7159257377555395,
+        "mean_error_honest": 0.7159257377555395,
+        "final_error": 0.2986805176879836,
+        "coherence_fraction": 0.9875
+      },
+      "centralized": {
+        "mean_error": 0.9483873102733537,
+        "mean_error_honest": 0.9483873102733537,
+        "final_error": 0.5605932184319501,
+        "coherence_fraction": 0.985
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 21,
+      "dropout": 0.5,
+      "decentralized": {
+        "mean_error": 0.9047318640648728,
+        "mean_error_honest": 0.9047318640648728,
+        "final_error": 0.487003695807767,
+        "coherence_fraction": 0.98
+      },
+      "centralized": {
+        "mean_error": 1.8094226083527674,
+        "mean_error_honest": 1.8094226083527674,
+        "final_error": 2.0717355721028725,
+        "coherence_fraction": 0.98
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 21,
+      "dropout": 0.7,
+      "decentralized": {
+        "mean_error": 1.10136699944475,
+        "mean_error_honest": 1.10136699944475,
+        "final_error": 0.8594246233054003,
+        "coherence_fraction": 0.9775
+      },
+      "centralized": {
+        "mean_error": 6.979862676968346,
+        "mean_error_honest": 6.979862676968346,
+        "final_error": 8.143027449451301,
+        "coherence_fraction": 0.4075
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 42,
+      "dropout": 0.0,
+      "decentralized": {
+        "mean_error": 0.8127565626703579,
+        "mean_error_honest": 0.8127565626703579,
+        "final_error": 0.41709497483834457,
+        "coherence_fraction": 0.98
+      },
+      "centralized": {
+        "mean_error": 0.7960448659848594,
+        "mean_error_honest": 0.7960448659848594,
+        "final_error": 0.1798724220563553,
+        "coherence_fraction": 0.9775
+      },
+      "dec_better_or_equal": false
+    },
+    {
+      "seed": 42,
+      "dropout": 0.1,
+      "decentralized": {
+        "mean_error": 0.8069727946290248,
+        "mean_error_honest": 0.8069727946290248,
+        "final_error": 0.28025382424700934,
+        "coherence_fraction": 0.98
+      },
+      "centralized": {
+        "mean_error": 0.8791494674561907,
+        "mean_error_honest": 0.8791494674561907,
+        "final_error": 0.40985237648668643,
+        "coherence_fraction": 0.98
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 42,
+      "dropout": 0.3,
+      "decentralized": {
+        "mean_error": 0.7211903543175695,
+        "mean_error_honest": 0.7211903543175695,
+        "final_error": 0.3322801361396126,
+        "coherence_fraction": 0.985
+      },
+      "centralized": {
+        "mean_error": 1.0109208005127914,
+        "mean_error_honest": 1.0109208005127914,
+        "final_error": 1.0122114249780354,
+        "coherence_fraction": 0.985
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 42,
+      "dropout": 0.5,
+      "decentralized": {
+        "mean_error": 0.9453889780505403,
+        "mean_error_honest": 0.9453889780505403,
+        "final_error": 0.36111318592712927,
+        "coherence_fraction": 0.9775
+      },
+      "centralized": {
+        "mean_error": 2.036252715765221,
+        "mean_error_honest": 2.036252715765221,
+        "final_error": 1.8119114532717155,
+        "coherence_fraction": 0.975
+      },
+      "dec_better_or_equal": true
+    },
+    {
+      "seed": 42,
+      "dropout": 0.7,
+      "decentralized": {
+        "mean_error": 1.0940599574896184,
+        "mean_error_honest": 1.0940599574896184,
+        "final_error": 0.63401742270663,
+        "coherence_fraction": 0.975
+      },
+      "centralized": {
+        "mean_error": 7.103686678262518,
+        "mean_error_honest": 7.103686678262518,
+        "final_error": 4.388304838631816,
+        "coherence_fraction": 0.42
+      },
+      "dec_better_or_equal": true
+    }
+  ]
+}

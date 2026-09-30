@@ -1,0 +1,242 @@
+{
+  "experiment": "exp2c_scale",
+  "sizes": [
+    6,
+    12,
+    24,
+    48
+  ],
+  "ticks": 400,
+  "dropout": 0.5,
+  "seeds": [
+    7,
+    21,
+    42
+  ],
+  "reference_claim": "centralized-minus-decentralized error gap stays positive and non-shrinking with swarm size N",
+  "claim_met": false,
+  "summary_by_n": {
+    "6": {
+      "mean_dec_error": 0.9720338493728947,
+      "mean_cen_error": 2.4074348145168982,
+      "gap": 1.4354009651440034,
+      "dec_wins": 3,
+      "n_seeds": 3
+    },
+    "12": {
+      "mean_dec_error": 0.8552356729958625,
+      "mean_cen_error": 2.023689503634696,
+      "gap": 1.1684538306388332,
+      "dec_wins": 3,
+      "n_seeds": 3
+    },
+    "24": {
+      "mean_dec_error": 0.7687959328340451,
+      "mean_cen_error": 1.648213455812393,
+      "gap": 0.879417522978348,
+      "dec_wins": 3,
+      "n_seeds": 3
+    },
+    "48": {
+      "mean_dec_error": 0.6757757515711482,
+      "mean_cen_error": 1.3293051309823805,
+      "gap": 0.6535293794112322,
+      "dec_wins": 3,
+      "n_seeds": 3
+    }
+  },
+  "trials": [
+    {
+      "seed": 7,
+      "n": 6,
+      "decentralized": {
+        "mean_error": 0.9187152956051245,
+        "mean_error_honest": 0.9187152956051245,
+        "final_error": 0.6558593772173202,
+        "coherence_fraction": 0.9875
+      },
+      "centralized": {
+        "mean_error": 2.325273598371163,
+        "mean_error_honest": 2.325273598371163,
+        "final_error": 3.2988580282937856,
+        "coherence_fraction": 0.9825
+      }
+    },
+    {
+      "seed": 21,
+      "n": 6,
+      "decentralized": {
+        "mean_error": 1.0705688813114147,
+        "mean_error_honest": 1.0705688813114147,
+        "final_error": 0.5140087486190599,
+        "coherence_fraction": 0.98
+      },
+      "centralized": {
+        "mean_error": 2.6456662567830587,
+        "mean_error_honest": 2.6456662567830587,
+        "final_error": 3.438241489149601,
+        "coherence_fraction": 0.9525
+      }
+    },
+    {
+      "seed": 42,
+      "n": 6,
+      "decentralized": {
+        "mean_error": 0.9268173712021448,
+        "mean_error_honest": 0.9268173712021448,
+        "final_error": 0.4780484371452675,
+        "coherence_fraction": 0.9875
+      },
+      "centralized": {
+        "mean_error": 2.251364588396472,
+        "mean_error_honest": 2.251364588396472,
+        "final_error": 1.3869552029853782,
+        "coherence_fraction": 0.9875
+      }
+    },
+    {
+      "seed": 7,
+      "n": 12,
+      "decentralized": {
+        "mean_error": 0.9595752337590794,
+        "mean_error_honest": 0.9595752337590794,
+        "final_error": 0.4186321146907322,
+        "coherence_fraction": 0.9775
+      },
+      "centralized": {
+        "mean_error": 2.167240339878536,
+        "mean_error_honest": 2.167240339878536,
+        "final_error": 1.0416542154226087,
+        "coherence_fraction": 0.9675
+      }
+    },
+    {
+      "seed": 21,
+      "n": 12,
+      "decentralized": {
+        "mean_error": 0.7753227684028584,
+        "mean_error_honest": 0.7753227684028584,
+        "final_error": 0.7245992237383693,
+        "coherence_fraction": 0.985
+      },
+      "centralized": {
+        "mean_error": 1.998251182005266,
+        "mean_error_honest": 1.998251182005266,
+        "final_error": 2.740366880210902,
+        "coherence_fraction": 0.9825
+      }
+    },
+    {
+      "seed": 42,
+      "n": 12,
+      "decentralized": {
+        "mean_error": 0.8308090168256497,
+        "mean_error_honest": 0.8308090168256497,
+        "final_error": 0.7719087707877678,
+        "coherence_fraction": 0.985
+      },
+      "centralized": {
+        "mean_error": 1.9055769890202852,
+        "mean_error_honest": 1.9055769890202852,
+        "final_error": 1.5582708126382931,
+        "coherence_fraction": 0.98
+      }
+    },
+    {
+      "seed": 7,
+      "n": 24,
+      "decentralized": {
+        "mean_error": 0.7701670235855169,
+        "mean_error_honest": 0.7701670235855169,
+        "final_error": 0.5228449423391416,
+        "coherence_fraction": 0.98
+      },
+      "centralized": {
+        "mean_error": 1.6412088066391368,
+        "mean_error_honest": 1.6412088066391368,
+        "final_error": 1.5835643944324798,
+        "coherence_fraction": 0.975
+      }
+    },
+    {
+      "seed": 21,
+      "n": 24,
+      "decentralized": {
+        "mean_error": 0.8116334705490617,
+        "mean_error_honest": 0.8116334705490617,
+        "final_error": 0.37792538909104545,
+        "coherence_fraction": 0.9775
+      },
+      "centralized": {
+        "mean_error": 1.6590365859243454,
+        "mean_error_honest": 1.6590365859243454,
+        "final_error": 0.911504484314154,
+        "coherence_fraction": 0.9725
+      }
+    },
+    {
+      "seed": 42,
+      "n": 24,
+      "decentralized": {
+        "mean_error": 0.7245873043675569,
+        "mean_error_honest": 0.7245873043675569,
+        "final_error": 0.327045258261715,
+        "coherence_fraction": 0.9825
+      },
+      "centralized": {
+        "mean_error": 1.6443949748736966,
+        "mean_error_honest": 1.6443949748736966,
+        "final_error": 0.6830835490186754,
+        "coherence_fraction": 0.9775
+      }
+    },
+    {
+      "seed": 7,
+      "n": 48,
+      "decentralized": {
+        "mean_error": 0.691803556312723,
+        "mean_error_honest": 0.691803556312723,
+        "final_error": 0.21544597671238294,
+        "coherence_fraction": 0.98
+      },
+      "centralized": {
+        "mean_error": 1.3148556249045413,
+        "mean_error_honest": 1.3148556249045413,
+        "final_error": 0.5766045773254618,
+        "coherence_fraction": 0.9775
+      }
+    },
+    {
+      "seed": 21,
+      "n": 48,
+      "decentralized": {
+        "mean_error": 0.696956030402281,
+        "mean_error_honest": 0.696956030402281,
+        "final_error": 0.19118344221549285,
+        "coherence_fraction": 0.9775
+      },
+      "centralized": {
+        "mean_error": 1.3837236278489746,
+        "mean_error_honest": 1.3837236278489746,
+        "final_error": 0.9324035156509033,
+        "coherence_fraction": 0.975
+      }
+    },
+    {
+      "seed": 42,
+      "n": 48,
+      "decentralized": {
+        "mean_error": 0.6385676679984409,
+        "mean_error_honest": 0.6385676679984409,
+        "final_error": 0.4384547267881131,
+        "coherence_fraction": 0.9825
+      },
+      "centralized": {
+        "mean_error": 1.2893361401936259,
+        "mean_error_honest": 1.2893361401936259,
+        "final_error": 1.247195748849533,
+        "coherence_fraction": 0.98
+      }
+    }
+  ]
+}

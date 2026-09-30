@@ -1,0 +1,30 @@
+{
+  "experiment": "exp3_governance_modularity",
+  "part_a_governance_invariant": {
+    "bypass_attempts": 500,
+    "bypass_executed": 0,
+    "rogue_ticks": 300,
+    "ungoverned_executed": 0,
+    "over_limit_executed": 0,
+    "governance_vetoes": 158,
+    "forbidden_kinds_blocked": 158,
+    "actuation_refusals": 500
+  },
+  "part_b_layer_swap": {
+    "ticks": 300,
+    "swap_at": 150,
+    "errors": [],
+    "action_kinds_seen": [
+      "ping",
+      "pong"
+    ],
+    "governance_calls": 300,
+    "governance_calls_expected": 300,
+    "all_executed_stamped": true,
+    "executed": 300
+  },
+  "reference_claim_a": "zero ungoverned actions reach actuation",
+  "reference_claim_b": "mid-run layer swap: no failures, governance stays 100%",
+  "claim_a_met": true,
+  "claim_b_met": true
+}

@@ -1,0 +1,318 @@
+{
+  "experiment": "exp2b_adversarial",
+  "n_drones": 12,
+  "ticks": 500,
+  "seeds": [
+    7,
+    21,
+    42
+  ],
+  "conditions": [
+    "baseline",
+    "blackout",
+    "jammer",
+    "byzantine",
+    "silent"
+  ],
+  "reference_claim": "decentralized honest-drone error <= centralized under blackout and jammer conditions; byzantine/silent exploratory",
+  "claim_met": true,
+  "summary_by_condition": {
+    "baseline": {
+      "mean_dec_honest_error": 0.7679975059774127,
+      "mean_cen_honest_error": 1.0437729301742407,
+      "mean_dec_all_error": 0.7679975059774127,
+      "mean_cen_all_error": 1.0437729301742407,
+      "mean_dec_coherence": 0.9846666666666666,
+      "mean_cen_coherence": 0.9826666666666667,
+      "dec_damage_vs_baseline": null,
+      "cen_damage_vs_baseline": null,
+      "n": 3
+    },
+    "blackout": {
+      "mean_dec_honest_error": 0.8559028443072828,
+      "mean_cen_honest_error": 2.2633803234237955,
+      "mean_dec_all_error": 0.8559028443072828,
+      "mean_cen_all_error": 2.2633803234237955,
+      "mean_dec_coherence": 0.9860000000000001,
+      "mean_cen_coherence": 0.87,
+      "dec_damage_vs_baseline": 1.114460447652099,
+      "cen_damage_vs_baseline": 2.168460455327158,
+      "n": 3
+    },
+    "jammer": {
+      "mean_dec_honest_error": 1.3761709795028538,
+      "mean_cen_honest_error": 11.23911518118087,
+      "mean_dec_all_error": 1.3761709795028538,
+      "mean_cen_all_error": 11.23911518118087,
+      "mean_dec_coherence": 0.984,
+      "mean_cen_coherence": 0.01,
+      "dec_damage_vs_baseline": 1.791895115273106,
+      "cen_damage_vs_baseline": 10.76777798721479,
+      "n": 3
+    },
+    "byzantine": {
+      "mean_dec_honest_error": 4.808604454068497,
+      "mean_cen_honest_error": 4.887701698941103,
+      "mean_dec_all_error": 4.47201993007586,
+      "mean_cen_all_error": 8.77507998938438,
+      "mean_dec_coherence": 0.9819999999999999,
+      "mean_cen_coherence": 0.0,
+      "dec_damage_vs_baseline": 6.261224049092057,
+      "cen_damage_vs_baseline": 4.682725100108874,
+      "n": 3
+    },
+    "silent": {
+      "mean_dec_honest_error": 0.8045990976459071,
+      "mean_cen_honest_error": 1.0828705709091526,
+      "mean_dec_all_error": 0.8011008154590377,
+      "mean_cen_all_error": 4.693653897873787,
+      "mean_dec_coherence": 0.9846666666666666,
+      "mean_cen_coherence": 0.9173333333333332,
+      "dec_damage_vs_baseline": 1.047658477252361,
+      "cen_damage_vs_baseline": 1.0374579945547977,
+      "n": 3
+    }
+  },
+  "trials": [
+    {
+      "seed": 7,
+      "condition": "baseline",
+      "decentralized": {
+        "mean_error": 0.7900376205453494,
+        "mean_error_honest": 0.7900376205453494,
+        "final_error": 0.351817290226035,
+        "coherence_fraction": 0.982
+      },
+      "centralized": {
+        "mean_error": 1.0947392786294414,
+        "mean_error_honest": 1.0947392786294414,
+        "final_error": 0.7591777976145228,
+        "coherence_fraction": 0.98
+      }
+    },
+    {
+      "seed": 21,
+      "condition": "baseline",
+      "decentralized": {
+        "mean_error": 0.6993990518451381,
+        "mean_error_honest": 0.6993990518451381,
+        "final_error": 0.4095082018203165,
+        "coherence_fraction": 0.988
+      },
+      "centralized": {
+        "mean_error": 1.0023777337860686,
+        "mean_error_honest": 1.0023777337860686,
+        "final_error": 0.6740610158936815,
+        "coherence_fraction": 0.986
+      }
+    },
+    {
+      "seed": 42,
+      "condition": "baseline",
+      "decentralized": {
+        "mean_error": 0.8145558455417506,
+        "mean_error_honest": 0.8145558455417506,
+        "final_error": 0.4557171025077659,
+        "coherence_fraction": 0.984
+      },
+      "centralized": {
+        "mean_error": 1.0342017781072124,
+        "mean_error_honest": 1.0342017781072124,
+        "final_error": 0.7629226837624868,
+        "coherence_fraction": 0.982
+      }
+    },
+    {
+      "seed": 7,
+      "condition": "blackout",
+      "decentralized": {
+        "mean_error": 0.9307671169916508,
+        "mean_error_honest": 0.9307671169916508,
+        "final_error": 0.6040940276940755,
+        "coherence_fraction": 0.982
+      },
+      "centralized": {
+        "mean_error": 2.407421233723082,
+        "mean_error_honest": 2.407421233723082,
+        "final_error": 4.992280724687652,
+        "coherence_fraction": 0.864
+      }
+    },
+    {
+      "seed": 21,
+      "condition": "blackout",
+      "decentralized": {
+        "mean_error": 0.8097302619333699,
+        "mean_error_honest": 0.8097302619333699,
+        "final_error": 1.6894172147357034,
+        "coherence_fraction": 0.988
+      },
+      "centralized": {
+        "mean_error": 2.1236754597837124,
+        "mean_error_honest": 2.1236754597837124,
+        "final_error": 4.0952192241547385,
+        "coherence_fraction": 0.88
+      }
+    },
+    {
+      "seed": 42,
+      "condition": "blackout",
+      "decentralized": {
+        "mean_error": 0.827211153996828,
+        "mean_error_honest": 0.827211153996828,
+        "final_error": 0.6932655220406204,
+        "coherence_fraction": 0.988
+      },
+      "centralized": {
+        "mean_error": 2.2590442767645915,
+        "mean_error_honest": 2.2590442767645915,
+        "final_error": 5.253089823667569,
+        "coherence_fraction": 0.866
+      }
+    },
+    {
+      "seed": 7,
+      "condition": "jammer",
+      "decentralized": {
+        "mean_error": 1.3548828455231938,
+        "mean_error_honest": 1.3548828455231938,
+        "final_error": 0.6607887447539129,
+        "coherence_fraction": 0.986
+      },
+      "centralized": {
+        "mean_error": 10.921217124462505,
+        "mean_error_honest": 10.921217124462505,
+        "final_error": 9.554425382637731,
+        "coherence_fraction": 0.006
+      }
+    },
+    {
+      "seed": 21,
+      "condition": "jammer",
+      "decentralized": {
+        "mean_error": 1.4138210174956212,
+        "mean_error_honest": 1.4138210174956212,
+        "final_error": 0.45756930771362003,
+        "coherence_fraction": 0.984
+      },
+      "centralized": {
+        "mean_error": 10.716439471784627,
+        "mean_error_honest": 10.716439471784627,
+        "final_error": 9.045614986406827,
+        "coherence_fraction": 0.01
+      }
+    },
+    {
+      "seed": 42,
+      "condition": "jammer",
+      "decentralized": {
+        "mean_error": 1.3598090754897465,
+        "mean_error_honest": 1.3598090754897465,
+        "final_error": 0.5927254526252356,
+        "coherence_fraction": 0.982
+      },
+      "centralized": {
+        "mean_error": 12.079688947295475,
+        "mean_error_honest": 12.079688947295475,
+        "final_error": 12.005176822331288,
+        "coherence_fraction": 0.014
+      }
+    },
+    {
+      "seed": 7,
+      "condition": "byzantine",
+      "decentralized": {
+        "mean_error": 4.406038170626192,
+        "mean_error_honest": 4.737333712762283,
+        "final_error": 4.1846708290343235,
+        "coherence_fraction": 0.982
+      },
+      "centralized": {
+        "mean_error": 8.735359953100021,
+        "mean_error_honest": 4.837281975169019,
+        "final_error": 8.849045795470447,
+        "coherence_fraction": 0.0
+      }
+    },
+    {
+      "seed": 21,
+      "condition": "byzantine",
+      "decentralized": {
+        "mean_error": 4.531371972284193,
+        "mean_error_honest": 4.882744774019038,
+        "final_error": 4.519682215679659,
+        "coherence_fraction": 0.98
+      },
+      "centralized": {
+        "mean_error": 8.857084947357016,
+        "mean_error_honest": 4.996678419949441,
+        "final_error": 8.251486165970558,
+        "coherence_fraction": 0.0
+      }
+    },
+    {
+      "seed": 42,
+      "condition": "byzantine",
+      "decentralized": {
+        "mean_error": 4.478649647317195,
+        "mean_error_honest": 4.805734875424171,
+        "final_error": 4.198388069804889,
+        "coherence_fraction": 0.984
+      },
+      "centralized": {
+        "mean_error": 8.732795067696102,
+        "mean_error_honest": 4.82914470170485,
+        "final_error": 7.809783363458354,
+        "coherence_fraction": 0.0
+      }
+    },
+    {
+      "seed": 7,
+      "condition": "silent",
+      "decentralized": {
+        "mean_error": 0.731340037132587,
+        "mean_error_honest": 0.7481326660066613,
+        "final_error": 0.4342921127288744,
+        "coherence_fraction": 0.988
+      },
+      "centralized": {
+        "mean_error": 4.893286921895182,
+        "mean_error_honest": 1.0012447267732945,
+        "final_error": 4.382189019047719,
+        "coherence_fraction": 0.974
+      }
+    },
+    {
+      "seed": 21,
+      "condition": "silent",
+      "decentralized": {
+        "mean_error": 0.864981734376067,
+        "mean_error_honest": 0.8477492949782233,
+        "final_error": 0.32537952378747964,
+        "coherence_fraction": 0.982
+      },
+      "centralized": {
+        "mean_error": 3.9748463472012237,
+        "mean_error_honest": 1.1197255996116544,
+        "final_error": 2.9172026148588195,
+        "coherence_fraction": 0.98
+      }
+    },
+    {
+      "seed": 42,
+      "condition": "silent",
+      "decentralized": {
+        "mean_error": 0.8069806748684591,
+        "mean_error_honest": 0.8179153319528368,
+        "final_error": 0.6265199396108723,
+        "coherence_fraction": 0.984
+      },
+      "centralized": {
+        "mean_error": 5.212828424524955,
+        "mean_error_honest": 1.1276413863425092,
+        "final_error": 5.048007767202454,
+        "coherence_fraction": 0.798
+      }
+    }
+  ]
+}
